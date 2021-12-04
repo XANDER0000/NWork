@@ -1,0 +1,53 @@
+// compress: true
+@import "vars";
+
+body {
+    margin: 0;
+    position: relative;
+    height: 100%;
+
+    font-family: 'Work Sans', sans-serif;
+
+    font-size: 14px;
+    color: @black;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks ======================*/
+@import "blocks/topbar.less";
+@import "blocks/header.less";
+@import "blocks/container.less";
+@import "blocks/btn.less";
+@import "blocks/intro.less";
+@import "blocks/section-heading.less";
+@import "blocks/advantage.less";
+@import "blocks/popular.less";
+@import "blocks/about.less";
+@import "blocks/documents.less";
+@import "blocks/reviews.less";
+@import "blocks/footer.less";
+
+
+@import "helpers";
